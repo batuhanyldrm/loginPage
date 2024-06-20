@@ -46,7 +46,7 @@ const WhiteOutlinedInput = styled(OutlinedInput)({
   color:  'white',
 });
 
-function App() {
+function LoginPage() {
   const classes = useStyles();
 
   const dbUsername = 'test@luxpmsoft.com';
@@ -114,4 +114,4 @@ function App() {
   );
 }
 
-export default App;
+export default LoginPage;
