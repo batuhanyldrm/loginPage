@@ -43,7 +43,7 @@ const WhiteOutlinedInput = styled(OutlinedInput)({
   '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
     borderColor: 'white',
   },
-  color:  'white',
+  color: 'white',
 });
 
 function LoginPage() {
@@ -55,10 +55,6 @@ function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [open, setOpen] = useState(false);
-  
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?":{}|<>]).+$/;
 
@@ -71,6 +67,10 @@ function LoginPage() {
       console.log("error")
     }
   }
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div className={classes.main}>
